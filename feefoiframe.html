@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Futura+PT:wght@400;600;800&display=swap');
 
-    * {
+    html, body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      width: 100%;
       height: 100%;
       font-family: 'Futura PT', sans-serif;
+      color: white;
       background: transparent;
       overflow: hidden;
     }
@@ -26,84 +22,48 @@
       background-position: center;
       width: 100%;
       height: 118px;
-      max-width: 880px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 20px;
-      color: white;
-    }
-
-    .text {
       display: flex;
       flex-direction: column;
       justify-content: center;
-    }
-
-    h1, h2 {
-      font-size: 1em;
-      text-transform: uppercase;
-      white-space: nowrap;
-      line-height: 1.1;
+      align-items: center;
+      text-align: center;
     }
 
     h1 {
+      font-size: 1em;
       font-weight: 800;
+      line-height: 1;
+      text-transform: uppercase;
+      margin: 0;
     }
 
     h2 {
-      font-weight: 400;
-    }
-
-    .button {
-      padding: 6px 12px;
-      background-color: white;
-      color: #00008c;
-      text-decoration: none;
-      border: 2px solid white;
+      font-size: 0.85em;
+      font-weight: 600;
+      line-height: 1;
       text-transform: uppercase;
-      font-size: 0.95em;
-      font-weight: 400;
-      border-radius: 0;
-      transition: all 0.3s ease;
-      white-space: nowrap;
-    }
-
-    .button:hover {
-      background-color: #00008c;
-      color: white;
+      margin: 2px 0 0 0;
     }
 
     @media (max-width: 707px) {
       .banner {
-        flex-direction: column;
         height: 152px;
-        padding: 12px;
-        text-align: center;
       }
 
-      .text {
-        margin-bottom: 10px;
-      }
-
-      h1, h2 {
+      h1 {
         font-size: 1em;
       }
 
-      .button {
-        font-size: 1em;
-        padding: 8px 14px;
+      h2 {
+        font-size: 0.9em;
       }
     }
   </style>
 </head>
 <body>
   <div class="banner">
-    <div class="text">
-      <h1>Ready to plan your next tour?</h1>
-      <h2>Check out our upcoming departures!</h2>
-    </div>
-    <a href="https://approachtours.com/departures" class="button">Book now</a>
+    <h1>Ready to plan your next tour?</h1>
+    <h2>Check out our upcoming departures!</h2>
   </div>
 </body>
 </html>
