@@ -16,22 +16,24 @@
     }
 
     .banner {
+      background: url('https://approachtours.com/wp-content/uploads/2025/05/Background.png') center/cover no-repeat;
       width: 100%;
       max-width: 880px;
       height: 118px;
-      background: url('https://approachtours.com/wp-content/uploads/2025/05/Background.png') center/cover no-repeat;
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
-      padding: 0 20px;
-      gap: 20px;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
     }
 
     .text {
       font-size: 1em;
-      font-weight: 600;
+      font-weight: 800;
       text-transform: uppercase;
-      line-height: 1.2;
+      line-height: 1.1;
+      margin-bottom: 4px;
       white-space: nowrap;
     }
 
@@ -56,11 +58,8 @@
 
     @media (max-width: 707px) {
       .banner {
-        flex-direction: column;
         height: 152px;
-        gap: 10px;
-        padding: 12px;
-        text-align: center;
+        padding: 10px;
       }
 
       .text {
