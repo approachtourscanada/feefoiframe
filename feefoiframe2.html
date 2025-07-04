@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Futura+PT:wght@400;600;800&display=swap');
 
@@ -13,57 +13,69 @@
       font-family: 'Futura PT', sans-serif;
       color: white;
       background: transparent;
-      overflow: hidden;
     }
 
     .banner {
-      background-image: url('https://approachtours.com/wp-content/uploads/2025/05/Background.png');
-      background-size: cover;
-      background-position: center;
+      background: url('https://approachtours.com/wp-content/uploads/2025/05/Background.png') center/cover no-repeat;
       width: 100%;
       height: 118px;
+      max-width: 880px;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      text-align: center;
+      padding: 0 20px;
     }
 
-    h1 {
+    .text {
       font-size: 1em;
       font-weight: 800;
-      line-height: 1;
       text-transform: uppercase;
-      margin: 0;
+      white-space: nowrap;
     }
 
-    h2 {
-      font-size: 0.85em;
-      font-weight: 600;
-      line-height: 1;
+    .button {
+      background-color: white;
+      color: #00008c;
+      text-decoration: none;
+      border: 2px solid white;
+      font-size: 0.9em;
+      padding: 6px 12px;
+      font-weight: 400;
       text-transform: uppercase;
-      margin: 2px 0 0 0;
+      border-radius: 0;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .button:hover {
+      background-color: #00008c;
+      color: white;
     }
 
     @media (max-width: 707px) {
       .banner {
+        flex-direction: column;
         height: 152px;
+        padding: 12px;
+        text-align: center;
+        gap: 8px;
       }
 
-      h1 {
+      .text {
         font-size: 1em;
       }
 
-      h2 {
-        font-size: 0.9em;
+      .button {
+        font-size: 1em;
+        padding: 8px 16px;
       }
     }
   </style>
 </head>
 <body>
   <div class="banner">
-    <h1>Ready to plan your next tour?</h1>
-    <h2>Check out our upcoming departures!</h2>
+    <div class="text">Ready to plan your next tour?</div>
+    <a href="https://approachtours.com/departures" class="button">Book now</a>
   </div>
 </body>
 </html>
